@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Exercício de Revisão</title>
+    <link rel="stylesheet" type="text/css" href="formato.css"/>
+    <script type="text/javascript" src="jscript.js"></script>
 </head>
-<body>
+<body id="home">
     <table>
         <tr>
             <td>
@@ -15,16 +17,12 @@
             </td>
         </tr>
     </table>
-    <ul>
-        <li>Home</li>
-        <li>Secção 1</li>
-        <li>Secção 2</li>
-    </ul>
+    <a class="exemplo" href=#home>Home </a>|<a class="exemplo" href=#secao1> Seção 1 </a>|<a class="exemplo" href=#secao2> Seção 2 </a>|<a class="exemplo" href=#secao3> Seção 3 </a>|<a class="exemplo" href=#4> Seção 4</a>
     <p>
-        <h3>Seção 1 – Descrição:</h3>
+        <h3><div id="secao1"></div>Seção 1 – Descrição:</h3>
         A tecnologia veio para ajudar todos os segmentos de negócio, estudos, pesquisas, além da sociedade em geral. ... Seja em um curso de alta graduação, seja em uma escola primária, o uso da tecnologia só favorece o aprendizado do aluno, que ganha maiores e mais diversificadas opções.
     </p>
-    <h3>Seção 2 – Listagem:</h3>
+    <h3><div id="secao2"></div>Seção 2 – Listagem:</h3>
     <ol>
         <li>1901 – O primeiro aspirador elétrico é desenvolvido</li>
         <li>1905 – Albert Einstein explica o efeito fotoelétrico</li>
@@ -35,15 +33,35 @@
         <li>2001 – A enciclopédia online Wikipedia é fundada por Larry Sanger e Jimmy Wales</li>
         <li>2007 – A Amazon.com lança seu leitor de livros eletrônicos (e-books) Kindle</li>
     </ul>
-    <h3>Seção 3 – Formulário:</h3>
+    <h3><div id="secao3"></div>Seção 3 – Formulário:</h3>
     <form>
-        <label for="nomeCompleto">Primeiro nome:</label>
-        <input type="text" name="nomeCompleto" id="nomeCompoleto"><br>
-        <label for="corFavorita">Cor favorita:</label>
-        <input type="text" name="corFavorita" id="corFavorita">
-        <label for="nascimento">Nascimento:</label>
-        <input type="text" name="nascimento" id="nascimento">
-        <label for="salario">Salário:</label>
+        <label for="nomeCompleto"><strong>Primeiro nome:</strong></label><br/>
+        <input type="text" name="nomeCompleto" id="nomeCompoleto"/><br/>
+        <label for="corFavorita"><strong>Cor favorita:</strong></label><br/>
+        <input type="color" name="corFavorita" id="corFavorita"/><br/>
+        <label for="nascimento"><strong>Nascimento:</strong></label><br/>
+        <input type="date" name="nascimento" id="nascimento"/><br/>
+        <label for="salario"><strong>Salário:</strong></label><br/>
+        <input type="text" name=salario id="salario"/><br/>
+        <input type="submit" onclick="escreverNome()"/>
+        <input type="reset" value="Limpar">
     </form>
+    <h3><div id="secao4"></div>Seção 4 – Tabela    </h3>
+    <table border=1 class="comBorda">
+        <tr>
+            <th>Nome</th>
+            <th>Cor Favorita</th>
+            <th>Nascimento</th>
+            <th>Salário</th>
+        </tr>
+        <tr>
+            <td>Allan Calixto</td>
+            <td>Verde</td>
+            <td>03/02/1994</td>
+            <td>0,00</td>
+        </tr>
+    </table>
+
+    <h6>Exercício de Revisão - Allan Calixto - 1902244</h6>
 </body>
 </html>
